@@ -4,10 +4,10 @@ Description: CI/CD Pipeline for ECS Fargate app with CodeBuild, CodePipeline, an
 Parameters:
   GitHubUser:
     Type: String
-    Default: bhargav3738    
+    Default: Emin-cc    
   GitHubRepo:
     Type: String
-    Default: final
+    Default: Assignment3
   GitHubBranch:
     Type: String
     Default: main
@@ -118,8 +118,8 @@ Resources:
               InputArtifacts:
                 - Name: BuildOutput
               Configuration:
-                ClusterName: nimbalkar-ECSCluster-ST94jkb5gsZi
-                ServiceName: nimbalkar-ECSService-wWFFxmeQe4qg
+                ClusterName: Aydin-infra-ECSCluster-kpB82mytMHze
+                ServiceName: Aydin-infra-ECSService-h73Yy7d0ugAn
                 FileName: imagedefinitions.json
               RunOrder: 1
 
